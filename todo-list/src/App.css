@@ -1,22 +1,18 @@
-/* app.css */
 
-/* Styles for the entire app */
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
-/* Styles for the heading */
+
 h1 {
   color: #333;
 }
-
-/* Styles for the task list */
 .task-list {
   margin-top: 20px;
 }
 
-/* Styles for individual tasks */
+
 .task {
   background-color: #5d64bc;
   padding: 10px;

@@ -1,8 +1,7 @@
-// App.js
 import React, { useState } from 'react';
 import Task from './Task';
 import TaskForm from './TaskForm';
-import './App.css'; // Import your CSS file
+import './App.css'; 
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -24,7 +23,7 @@ function App() {
           <Task
             key={task.id}
             task={task}
-            deleteTask={deleteTask} // Ensure deleteTask is passed down
+            deleteTask={deleteTask} 
           />
         ))}
       </div>

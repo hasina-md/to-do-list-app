@@ -1,47 +1,74 @@
+/* app.css */
 
+/* Styles for the entire app */
 .App {
-  text-align: center;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
+/* Styles for the heading */
 h1 {
   color: #333;
-  margin-top: 2rem;
 }
 
-.Task {
+/* Styles for the task list */
+.task-list {
+  margin-top: 20px;
+}
+
+/* Styles for individual tasks */
+.task {
+  background-color: #5d64bc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
-  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+
+.task span {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.task button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.Task.completed {
-  background-color: #f8f8f8;
-  text-decoration: line-through;
+.task button:hover {
+  background-color: #c82333;
 }
 
-.TaskForm {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
+/* Styles for the task form */
+form {
+  margin-bottom: 20px;
 }
 
-.TaskForm input[type="text"] {
-  padding: 0.5rem;
+input[type="text"] {
+  padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 1rem;
+  border-radius: 3px;
+  margin-right: 10px;
 }
 
-.TaskForm button {
-  padding: 0.5rem 1rem;
-  border: none;
+button[type="submit"] {
   background-color: #007bff;
-  color: white;
-  border-radius: 4px;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }

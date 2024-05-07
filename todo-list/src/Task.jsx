@@ -6,8 +6,8 @@ function Task({ task, deleteTask }) {
     }
     return (
         <div  className="task" > 
-        <span>{task.text}</span>
-        <span>Due Date: {task.dueDate}</span>
+        <span>Task: {task.text}</span>
+        <span>Due Date: {task.dueDate || "N/A"}</span>
         <span>Priority: {task.priority}</span>       
            
             <button onClick={handleDelete}>Delete</button>

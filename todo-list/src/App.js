@@ -7,9 +7,10 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   const addTask = (taskText, dueDate, priority) => {
-    setTasks([...tasks, { text: taskText, dueDate: dueDate, priority: priority, id: Date.now() }]);
+    console.log('Adding Task:', { text: taskText, dueDate, priority }); // Log the input to ensure it's correct
+    setTasks([...tasks, { text: taskText, dueDate, priority, id: Date.now() }]);
   };
-
+  
   const deleteTask = (taskId) => {
     setTasks(tasks.filter(task => task.id !== taskId));
   };
